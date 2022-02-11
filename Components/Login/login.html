@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="https://kube-ui.netlify.app/Components/kube-ui.css" />
+    <link rel="stylesheet" href="https://kube-ui.netlify.app/utility.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous"
+  />
+  </head>
+  <body>
+    <div>
+      <header class="navbar-home">
+        <nav class="navbar-wrapper">
+          <div class="navbar-left-aligned">
+            <svg
+              class="sidebar-toggler"
+              id="sidebar-toggler"
+              viewBox="0 0 100 40"
+              width="40"
+              height="40"
+            >
+              <rect width="60" height="10"></rect>
+              <rect y="20" width="60" height="10"></rect>
+              <rect y="40" width="60" height="10"></rect>
+            </svg>
+            <a class="brand-logo" href="#">ZIA</a>
+            <ul class="navbar-nav navbar-nav-collapse">
+              <li class="nav-item">
+                <a class="nav-item-link" href="../../index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item-link" href="../Products/product.html">PRODUCT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-right-aligned">
+            <div class="search-bar">
+              <button class="search-bar__btn" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+              <input
+                class="search-bar-input"
+                type="text"
+                id="product"
+                placeholder="Search item here"
+              />
+            </div>
+            <ul class="navbar-nav navbar-fixed">
+              <li class="nav-item">
+                <a class="nav-item-link" href="./Components/Login/login.html"
+                  >LOGIN</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-icon-link badge-container no-link-style" href="">
+                  <span class="nav-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-icon-link no-link-style" href="">
+                  <span class="nav-icon">
+                    <i class="fas fa-heart"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="login-wrapper">
+        <div class="breadcrumb">
+
+        </div>
+        <div class="login-modal">
+          <form action="" class="login-form">
+            <h3 class="login-title">Log in</h3>
+            <p class="login-subtitle text-center">Enter email and password</p>
+            <div class="input-container">
+              <label class="input-label" for="userName">Email</label>
+              <input
+                class="input-section"
+                type="text"
+                id="userName"
+                placeholder="Email"
+              />
+            </div>
+            <div class="input-container">
+              <label class="input-label" for="pwd">Password</label>
+              <input
+                class="input-section"
+                type="password"
+                id="pwd"
+                placeholder="password"
+                required
+              />
+            </div>
+            <div class="login-help">
+              <div>
+                <label class="input-label text-sm" for="pwd-store">
+                  <input type="checkbox" name="" id="pwd-store">
+                  Remember me
+                </label>
+              </div>
+              <a href="#" class="text-sm">Forgot Password?</a>
+            </div>
+           
+
+            <button class="bttn bttn-primary bttn-block">LOG IN</button>
+            <p class="sub-text text-sm text-center">Don't have an account? <a class="text-sm bold link-text-primary" href="../SignUp/signup.html"> Sign up!</a></p>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
