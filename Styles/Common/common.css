@@ -1,0 +1,13 @@
+input {
+  outline: none;
+}
+.no-link-style {
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
+a {
+  color: var(--dark-secondary-text-color);
+}
