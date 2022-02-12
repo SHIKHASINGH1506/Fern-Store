@@ -3,6 +3,7 @@
 @import "./Navbar/navbar.css";
 @import "./Login/login.css";
 @import "./Products/product.css";
+@import "./Wishlist/wishlist.css";
 
 html {
   scroll-behavior: smooth;
