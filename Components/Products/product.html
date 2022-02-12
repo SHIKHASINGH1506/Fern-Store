@@ -102,16 +102,19 @@
             <!-- sidebar -->
             <div class="product-sidebar mr-6">
                 <aside class="side-navbar">
-                    <header class="nav-header my-4">
+                    <header class="nav-header py-4">
                         <div class="title px-4 bold">Filters</div>
-                        <a href="" class="link-text-primary">clear</a>
+                        <!-- <a href="" class="link-text-primary">clear</a> -->
                     </header>
                     <div class="drawer-menu">
                         <div class="price-filter">
                             <div class="list-title px-4 my-2 bold">Price</div>
-                            <div class="px-4">
-                                <input type="range" id="price" name="price"
-                                min="250" max="2000">
+                            <div class="slider px-4">
+                                <div class="range">
+                                    <input type="range" id="price" name="price"
+                                    min="250" max="2000">
+                                </div>
+                               
                             </div>
                         </div>
                         <div class="rating-filter">
@@ -228,7 +231,7 @@
             </div>
             <!-- Product listing page -->
             <div class="product-container">
-                <h5 class="product-header">Products</h5>
+                <h5 class="product-header py-4">Products</h5>
                 <div class="product-list">
                     <div class="card-vertical">
                         <div class="card-image-container">
