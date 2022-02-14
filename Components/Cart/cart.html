@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | Fern</title>
+    <link
+      rel="stylesheet"
+      href="https://kube-ui.netlify.app/Components/kube-ui.css"
+    />
+    <link rel="stylesheet" href="https://kube-ui.netlify.app/utility.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="navbar-home">
+      <nav class="navbar-wrapper">
+        <div class="navbar-left-aligned">
+          <svg
+            class="sidebar-toggler"
+            id="sidebar-toggler"
+            viewBox="0 0 100 40"
+            width="40"
+            height="40"
+          >
+            <rect width="60" height="10"></rect>
+            <rect y="20" width="60" height="10"></rect>
+            <rect y="40" width="60" height="10"></rect>
+          </svg>
+          <a class="brand-logo" href="#">ZIA</a>
+          <ul class="navbar-nav navbar-nav-collapse">
+            <li class="nav-item">
+              <a class="nav-item-link" href="../../index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-link" href="../Products/product.html"
+                >PRODUCT</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-right-aligned">
+          <div class="search-bar">
+            <button class="search-bar__btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+            <input
+              class="search-bar-input"
+              type="text"
+              id="product"
+              placeholder="Search item here"
+            />
+          </div>
+          <ul class="navbar-nav navbar-fixed">
+            <li class="nav-item">
+              <a class="nav-item-link" href="../Login/login.html"
+                >LOGIN</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-icon-link badge-container no-link-style"
+                href="#"
+              >
+                <span class="nav-icon">
+                  <i class="fas fa-shopping-bag"></i>
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-icon-link no-link-style"
+                href="../Wishlist/wishlist.html"
+                <span class="nav-icon">
+                  <i class="fas fa-heart"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar-wrapper" id="sidebar-wrapper">
+          <div class="sidebar" id="sidebar">
+            <ul class="sidebar-list sidebar-collapse">
+              <li class="navbar-link-item hide">
+                <a class="nav-item-link" href="#"><i>Profile icon</i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item-link" href="">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item-link" href="">PRODUCT</a>
+              </li>
+              <li class="nav-item hide">
+                <a class="nav-item-link" href="#">Orders</a>
+              </li>
+              <li class="nav-item hide">
+                <a class="nav-item-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="general-wrapper">
+      <div class="cart-wrapper">
+        <h5 class="cart-header py-4">Your Cart (2)</h5>
+        <div class="cart-body">
+          <div class="cart-item-list">
+            <div class="card-horizontal cart-item">
+              <div class="card-image-container">
+                <img
+                  class="responsive-img"
+                  src="../assets/images/Products/Aloevera.jpg"
+                  alt="model"
+                />
+              </div>
+              <div class="card-horizontal-content-container">
+                <button class="btn-close py-2" id="close-btn-alert">
+                  <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+                <div class="text-conatiner">
+                  <div class="card-title">Aloe Vera</div>
+                  <div class="card-text">Appliqued Crew-Neck T-shirt</div>
+                  <div class="card-price">
+                    <span class="product-discounted-price">Rs. 2364</span>
+                    <span class="product-original-price">Rs. 2999</span>
+                    <span class="product-discount">(20% OFF)</span>
+                  </div>
+                </div>
+                <div class="button-container">
+                  <button class="bttn bttn-outline-secondary text-sm">
+                    Move to Wishlist
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-horizontal cart-item">
+              <div class="card-image-container">
+                <img
+                  class="responsive-img"
+                  src="../assets/images/Products/Climber.jpg"
+                  alt="model"
+                />
+              </div>
+              <div class="card-horizontal-content-container">
+                <button class="btn-close py-2" id="close-btn-alert">
+                  <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+                <div class="text-conatiner">
+                  <div class="card-title">Hanging Plant</div>
+                  <div class="card-text">Appliqued Crew-Neck T-shirt</div>
+                  <div class="card-price">
+                    <span class="product-discounted-price">Rs. 2364</span>
+                    <span class="product-original-price">Rs. 2999</span>
+                    <span class="product-discount">(20% OFF)</span>
+                  </div>
+                </div>
+                <div class="button-container">
+                  <button class="bttn bttn-outline-secondary text-sm">
+                    Move to Wishlist
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="item-price-card">
+            <div class="price-card-header py-4 bold">Order Details</div>
+            <div class="order-body">
+              <div class="order-breakup py-4">
+                <div class="order-item">
+                  <span>Bag Total (3 Items)</span>
+                  <span> Rs 2500</span>
+                </div>
+                <div class="order-item">
+                  <span>Discount</span>
+                  <span>Rs -350</span>
+                </div>
+                <div class="order-item">
+                  <span>Delivery</span>
+                  <span>Free</span>
+                </div>
+              </div>
+              <div class="order-amount py-2 d-flex justify-between bold">
+                <span>Total Amount</span>
+                <span>Rs 2000</span>
+              </div>
+            </div>
+            <button class="bttn bttn-primary bttn-order">place order</button>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
