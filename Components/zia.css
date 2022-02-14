@@ -4,6 +4,7 @@
 @import "./Login/login.css";
 @import "./Products/product.css";
 @import "./Wishlist/wishlist.css";
+@import "./Cart/cart.css";
 
 html {
   scroll-behavior: smooth;
@@ -33,6 +34,7 @@ body {
   
     --secondary-text-color: #696b79;
     --dark-secondary-text-color: #3f4049;
+    --dark-secondary-text-color2: #26272c;
     --secondary-color: #eaeaec;
     --dark-secondary-color: #d8d8da;
 }

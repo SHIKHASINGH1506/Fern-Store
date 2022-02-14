@@ -14,4 +14,7 @@ input {
   a {
     color: var(--dark-secondary-text-color);
   }
+  .shop-btn{
+    color: var(--complimentary-text-color);
+  }
   
