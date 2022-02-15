@@ -58,11 +58,23 @@
   .product-sidebar {
     display: none;
   }
+  /* .product-list {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  } */
+  .product-header {
+    text-align: center;
+  }
+}
+@media screen and (min-width:400px) and  (max-width:640px){
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 399px) {
   .product-list {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
-  }
-  .product-header {
-    text-align: center;
   }
 }
