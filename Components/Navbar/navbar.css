@@ -88,7 +88,6 @@
   width: 100%;
 }
 .hero-img-wrapper{
-  /* max-height: calc(100vh - 72px); */
   position: relative;
 }
 .text-overlay{
@@ -177,7 +176,7 @@
 /* media query */
 @media screen and (max-width:426px){
   .text-overlay .text-overlay-title{
-    font-size: 1rem;
+    font-size: 25.2px;
   }
   .bttn-lg{
     font-size: 1rem;
