@@ -88,7 +88,7 @@
   width: 100%;
 }
 .hero-img-wrapper{
-  max-height: calc(100vh - 72px);
+  /* max-height: calc(100vh - 72px); */
   position: relative;
 }
 .text-overlay{

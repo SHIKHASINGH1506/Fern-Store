@@ -58,10 +58,6 @@
   .product-sidebar {
     display: none;
   }
-  /* .product-list {
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-  } */
   .product-header {
     text-align: center;
   }
