@@ -1,15 +1,15 @@
 .navbar-home {
   padding: 0.7rem 0rem;
   box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 10%);
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 .navbar-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 5;
   height: 2.5rem;
 }
 .navbar-left-aligned {
@@ -18,22 +18,23 @@
   width: 50%;
 }
 .navbar-left-aligned svg {
-  width: 1.875rem;
-  height: 1.875rem;
+  width: 2.1rem;
+  height: 2.1rem;
 }
 .sidebar-toggler {
   display: none;
 }
 .brand-logo {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: var(--primary-color);
   margin-right: 3rem;
+  letter-spacing: 2px;
 }
 .navbar-right-aligned {
   display: flex;
   align-items: center;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   width: 50%;
 }
 .navbar-nav {
@@ -47,39 +48,39 @@
   font-size: 1rem;
   color: var(--dark-secondary-text-color);
 }
-.nav-icon-link{
+.nav-icon-link {
   padding: 0.5rem 0.75rem;
   display: block;
   text-decoration: none;
   font-size: 1rem;
   color: var(--dark-secondary-text-color);
 }
-.nav-icon{
+.nav-icon {
   width: 1.3rem;
   height: 1.3rem;
   font-size: 1.1rem;
 }
-.search-bar{
+.search-bar {
   display: flex;
   align-items: center;
   flex-grow: 1;
   position: relative;
-  background-color:  #f7f7fd;
+  background-color: #f7f7fd;
 }
-.search-bar__btn{
+.search-bar__btn {
   padding: 0.5rem 0.7rem;
   background: transparent;
   border: none;
   font-size: 1rem;
   color: var(--dark-secondary-text-color);
 }
-.search-bar-input{
+.search-bar-input {
   padding: 0.5rem 0.7rem;
   border: none;
-  background-color:  #f7f7fd;
+  background-color: #f7f7fd;
   width: 100%;
 }
-.search-bar-input:focus{
+.search-bar-input:focus {
   border-bottom: 1px solid var(--dark-secondary-text-color);
 }
 .responsive-img {
@@ -87,10 +88,10 @@
   height: auto;
   width: 100%;
 }
-.hero-img-wrapper{
+.hero-img-wrapper {
   position: relative;
 }
-.text-overlay{
+.text-overlay {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,63 +102,53 @@
   top: 0px;
   left: 0;
 }
-.text-overlay-title{
+.text-overlay-title {
   color: black;
   letter-spacing: 2px;
 }
 
 /* sidebar to be developed */
-.sidebar-wrapper {
-  display: none;
-}
 .navbar-collapse {
   display: block;
 }
 .sidebar-wrapper {
   background-color: rgba(0, 0, 0, 0.562);
+  position: fixed;
+  top: 3.6rem;
+  left: 0;
+  height: 100vh;
   width: 100vw;
   z-index: 3;
   visibility: hidden;
-  opacity: 0;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.43, 0.96);
 }
-/* .sidebar-wrapper,
 .sidebar {
+  padding: 2rem 1rem 1rem;
+  max-width: 16.875rem;
   height: 100vh;
-    position: fixed;
-    top: 40px;
-    left: 0;
-} */
-.sidebar {
-  /* max-width: 300px;
-    background-color: #ffc759;
-    color: black;
-
-    z-index: 4;
-    transform: translate(-100%,0);
-    transition: transform .3s cubic-bezier(0.25, 0.46, 0.43, 0.96);
-    padding: 2rem 1rem 1rem; */
-
-  max-width: 300px;
-  position: fixed;
-  z-index: 4;
-  top: 40px;
-  left: 0;
-  height: 100vh;
-  background-color: #ffc759;
+  background-color: var(--light-primary-color);
   color: black;
   transform: translate(-100%, 0);
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.43, 0.96);
-  padding: 2rem 1rem 1rem;
+}
+.sidebar-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--complimentary-text-color);
+  text-transform: uppercase;
+}
+.sidebar-item-link {
+  text-transform: uppercase;
+  padding: 0rem 0.75rem;
+}
+.profile-icon {
+  font-size: 1.65rem;
 }
 
 /* badge */
-.badge-container{
+.badge-container {
   position: relative;
   box-sizing: border-box;
 }
-
-
 @media only screen and (max-width: 1024px) {
   .navbar-nav-collapse {
     display: none;
@@ -174,12 +165,11 @@
   }
 }
 /* media query */
-@media screen and (max-width:426px){
-  .text-overlay .text-overlay-title{
+@media screen and (max-width: 426px) {
+  .text-overlay .text-overlay-title {
     font-size: 1.575em;
   }
-  .bttn-lg{
+  .bttn-lg {
     font-size: 1rem;
   }
 }
-
