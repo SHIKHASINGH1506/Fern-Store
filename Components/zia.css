@@ -5,6 +5,7 @@
 @import "./Products/product.css";
 @import "./Wishlist/wishlist.css";
 @import "./Cart/cart.css";
+@import "./Home/home.css";
 
 html {
   scroll-behavior: smooth;
