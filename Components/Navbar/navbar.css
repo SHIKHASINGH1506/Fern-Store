@@ -176,7 +176,7 @@
 /* media query */
 @media screen and (max-width:426px){
   .text-overlay .text-overlay-title{
-    font-size: 25.2px;
+    font-size: 1.575em;
   }
   .bttn-lg{
     font-size: 1rem;
