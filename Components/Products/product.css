@@ -45,6 +45,7 @@
 }
 .card-vertical{
   background-color: transparent;
+  margin-bottom: 2rem;
 }
 .card-image-container {
   max-height: 15.625rem;
